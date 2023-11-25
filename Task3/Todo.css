@@ -33,4 +33,59 @@
 .row{
     display: flex;
     align-items: center;
+    justify-content: space-between;
+    background-color: cadetblue;
+    border-radius: 10px;
+    padding-left: 20px;
+    margin-bottom: 25px;
+}
+input{
+    flex: 1;
+    border: none;
+    outline: none;
+    background: transparent;
+    padding: 10px;
+    font-weight: 14px;
+}
+button{
+    border: none;
+    outline: none;
+    padding: 16px 50px;
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+    cursor: pointer;
+    background-color:crimson;
+    border-radius: 10px;
+}
+button:hover{
+    background-color:rgb(143, 0, 29);
+}
+ul li{
+    list-style: none;
+    font-size: 17px;
+    padding: 12px 8px 12px 50px ;
+    user-select: none;
+    cursor: pointer;
+    position: relative;
+}
+ul li::before{
+    content: '';
+    position: absolute;
+    height: 28px;
+    border-radius: 50%;
+    background-image: url(preview-removebg-preview.png);
+    background-size: cover;
+    background-position:center;
+    top:8px;
+    left: 16px;
+}
+
+
+ul li.checked{
+        color: #555;
+    text-decoration: line-through;
+}
+ul li.checked ::before{
+    color: #666;
+    background-image: url(preview-removebg-preview.png);
 }
