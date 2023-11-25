@@ -7,13 +7,20 @@
     <link rel="stylesheet" href="Todo.css">
 </head>
 <body>
-    <div class="main">
-        <header>TODO LIST</header>
-    </div>
-        <form id="For add task">
-            <input type="text" id="tasktoadd" placeholder="What's Your plan todo ?">
-                <input type="submit" id="tosubmit" value="Add task">
-                    <input type="text">
+        
+        <div class="container">
+            <div class="todo-app">
+                <h2>TO-DO LIST <img src="download__3_-removebg-preview (2).png"></h2>
+                    <div class="row">
+                        <input type="text" id="input-box" placeholder="Enter Your Task ?">
+                        <button onclick="addtask()">ADD</button>
+                    </div>
+                    <ul id="list-container">
+                        <li class="checked">Task 0</li>
+                        <li>Task1</li>
+                    </ul>
+                </div>
+        </div>
 
         <script src="Todo.js"></script>
     </body>
