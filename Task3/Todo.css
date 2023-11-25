@@ -73,19 +73,17 @@ ul li::before{
     position: absolute;
     height: 28px;
     border-radius: 50%;
-    background-image: url(preview-removebg-preview.png);
+    background-image: url(Images/download__5_-removebg-preview.png);
     background-size: cover;
     background-position:center;
     top:8px;
     left: 16px;
 }
-
-
 ul li.checked{
-        color: #555;
+    color: #555;
     text-decoration: line-through;
 }
 ul li.checked ::before{
     color: #666;
-    background-image: url(preview-removebg-preview.png);
+    background-image: url(Images/download__4_-removebg-preview.png);
 }
